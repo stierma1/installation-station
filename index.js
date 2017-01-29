@@ -2,7 +2,7 @@ var fs = require("fs");
 var path = require("path");
 var spawnSync = require("child_process").spawnSync;
 
-module.exports = async function(appName, questions, location) {
+module.exports = async function(appName, appId, questions, location) {
 
     var nodeInstalled = fs.existsSync(path.join(process.cwd(), "node_modules"));
 
@@ -15,7 +15,7 @@ module.exports = async function(appName, questions, location) {
 
     var nEw = require("pid-async-class").nEw;
     var Installer = require("./lib/installer");
-    var installer = await nEw(Installer, appName, questions || [], location || "local",process.cwd());
+    var installer = await nEw(Installer, appName, appId, questions || [], location || "local",process.cwd());
 
     await installer.install();
     installer.__destroy();
