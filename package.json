@@ -1,0 +1,23 @@
+{
+  "name": "installation-station",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stierma1/installation-station.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stierma1/installation-station/issues"
+  },
+  "homepage": "https://github.com/stierma1/installation-station#readme",
+  "dependencies": {
+    "pid-async-class": "^1.0.6",
+    "pouchdb": "^6.1.1"
+  }
+}
